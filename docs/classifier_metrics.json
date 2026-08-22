@@ -1,0 +1,115 @@
+{
+  "test_set_size": 150,
+  "overall_accuracy": 0.96,
+  "per_class_report": {
+    "bank_declined": {
+      "precision": 1.0,
+      "recall": 0.9512195121951219,
+      "f1-score": 0.975,
+      "support": 41.0
+    },
+    "card_expired": {
+      "precision": 1.0,
+      "recall": 0.9411764705882353,
+      "f1-score": 0.9696969696969697,
+      "support": 17.0
+    },
+    "insufficient_funds": {
+      "precision": 1.0,
+      "recall": 0.9512195121951219,
+      "f1-score": 0.975,
+      "support": 41.0
+    },
+    "invalid_cvv": {
+      "precision": 1.0,
+      "recall": 0.9166666666666666,
+      "f1-score": 0.9565217391304348,
+      "support": 12.0
+    },
+    "network_error": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 27.0
+    },
+    "other": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1-score": 0.8,
+      "support": 12.0
+    },
+    "accuracy": 0.96,
+    "macro avg": {
+      "precision": 0.9444444444444445,
+      "recall": 0.9600470269408575,
+      "f1-score": 0.946036451471234,
+      "support": 150.0
+    },
+    "weighted avg": {
+      "precision": 0.9733333333333334,
+      "recall": 0.96,
+      "f1-score": 0.9634207290294247,
+      "support": 150.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "bank_declined",
+      "card_expired",
+      "insufficient_funds",
+      "invalid_cvv",
+      "network_error",
+      "other"
+    ],
+    "matrix": [
+      [
+        39,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        16,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        39,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        11,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        27,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        12
+      ]
+    ]
+  }
+}

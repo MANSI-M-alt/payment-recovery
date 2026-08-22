@@ -1,0 +1,601 @@
+payment_id,customer_id,amount_paise,currency,failure_reason_raw,true_failure_category,failed_at,subscription_id,attempt_number,ground_truth_recovered
+PAY00001,CUST0232,299900,INR,Declined by issuing bank,bank_declined,2026-08-02T18:23:00,SUB0076,1,False
+PAY00002,CUST0084,1999900,INR,Gateway timeout,network_error,2026-08-18T11:33:00,SUB0043,1,True
+PAY00003,CUST0066,149900,INR,CVV verification failed,invalid_cvv,2026-08-11T03:29:00,SUB0058,1,False
+PAY00004,CUST0221,1999900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-18T11:05:00,SUB0138,1,True
+PAY00005,CUST0032,1999900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-21T11:06:00,SUB0144,1,False
+PAY00006,CUST0084,999900,INR,Incorrect CVV entered,invalid_cvv,2026-08-15T22:19:00,SUB0012,1,False
+PAY00007,CUST0243,99900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-18T04:24:00,,1,True
+PAY00008,CUST0191,999900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-05T13:41:00,SUB0105,1,True
+PAY00009,CUST0241,99900,INR,Transaction failed,other,2026-08-15T14:15:00,SUB0095,1,False
+PAY00010,CUST0140,99900,INR,Payment could not be processed,invalid_cvv,2026-08-04T14:05:00,,1,True
+PAY00011,CUST0153,99900,INR,Transaction failed,other,2026-08-05T18:13:00,,1,True
+PAY00012,CUST0054,99900,INR,DO_NOT_HONOR,bank_declined,2026-08-20T00:17:00,SUB0034,1,False
+PAY00013,CUST0139,1999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-01T04:00:00,,1,True
+PAY00014,CUST0151,99900,INR,Card has expired,card_expired,2026-08-14T16:07:00,SUB0093,1,False
+PAY00015,CUST0132,499900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-02T23:50:00,,1,False
+PAY00016,CUST0078,1999900,INR,Payment could not be processed,bank_declined,2026-08-13T13:43:00,,1,True
+PAY00017,CUST0114,99900,INR,Insufficient balance in account,insufficient_funds,2026-08-03T04:17:00,SUB0084,1,True
+PAY00018,CUST0098,499900,INR,Unknown error occurred,other,2026-08-20T13:06:00,SUB0142,1,False
+PAY00019,CUST0185,99900,INR,CVV verification failed,invalid_cvv,2026-08-14T10:52:00,SUB0025,1,True
+PAY00020,CUST0081,99900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-16T02:05:00,SUB0025,1,False
+PAY00021,CUST0191,499900,INR,Gateway timeout,network_error,2026-08-18T17:21:00,SUB0109,1,True
+PAY00022,CUST0223,499900,INR,Incorrect CVV entered,invalid_cvv,2026-08-10T11:06:00,SUB0124,1,True
+PAY00023,CUST0058,149900,INR,"Network error, please retry",network_error,2026-08-04T08:36:00,SUB0144,1,True
+PAY00024,CUST0250,999900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-18T00:38:00,,1,True
+PAY00025,CUST0069,149900,INR,Txn declined - low balance,insufficient_funds,2026-08-11T11:00:00,SUB0103,1,True
+PAY00026,CUST0018,499900,INR,Insufficient balance in account,insufficient_funds,2026-08-07T12:26:00,SUB0080,1,True
+PAY00027,CUST0185,49900,INR,This card is no longer valid,card_expired,2026-08-05T05:48:00,,1,False
+PAY00028,CUST0070,299900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-14T08:13:00,SUB0111,1,False
+PAY00029,CUST0029,149900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-02T07:25:00,SUB0053,1,False
+PAY00030,CUST0078,149900,INR,Transaction failed,other,2026-08-11T03:00:00,SUB0034,1,False
+PAY00031,CUST0098,1999900,INR,DO_NOT_HONOR,bank_declined,2026-08-12T02:25:00,SUB0005,1,False
+PAY00032,CUST0118,499900,INR,CVV verification failed,invalid_cvv,2026-08-13T22:40:00,SUB0006,1,True
+PAY00033,CUST0248,999900,INR,This card is no longer valid,card_expired,2026-08-12T02:27:00,SUB0103,1,False
+PAY00034,CUST0135,99900,INR,Txn declined - low balance,insufficient_funds,2026-08-11T05:04:00,SUB0131,1,True
+PAY00035,CUST0050,1999900,INR,CVV verification failed,invalid_cvv,2026-08-21T04:15:00,SUB0045,1,True
+PAY00036,CUST0155,1999900,INR,Insufficient balance in account,insufficient_funds,2026-08-21T15:29:00,,1,False
+PAY00037,CUST0115,499900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-11T20:20:00,SUB0114,1,True
+PAY00038,CUST0162,149900,INR,EXPIRED_CARD,card_expired,2026-08-17T02:19:00,SUB0095,1,False
+PAY00039,CUST0213,499900,INR,Insufficient balance in account,insufficient_funds,2026-08-13T14:37:00,,1,True
+PAY00040,CUST0230,299900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-17T04:03:00,,1,True
+PAY00041,CUST0215,999900,INR,This card is no longer valid,card_expired,2026-08-06T01:15:00,,1,False
+PAY00042,CUST0135,149900,INR,DO_NOT_HONOR,bank_declined,2026-08-13T13:49:00,SUB0086,1,True
+PAY00043,CUST0017,149900,INR,This card is no longer valid,card_expired,2026-08-09T23:54:00,,1,False
+PAY00044,CUST0224,99900,INR,Insufficient balance in account,insufficient_funds,2026-08-12T09:41:00,SUB0022,1,True
+PAY00045,CUST0080,999900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-17T02:41:00,SUB0005,1,False
+PAY00046,CUST0093,1999900,INR,Card has expired,card_expired,2026-08-16T06:14:00,SUB0076,1,False
+PAY00047,CUST0217,1999900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-17T01:42:00,,1,True
+PAY00048,CUST0034,1999900,INR,DO_NOT_HONOR,bank_declined,2026-08-20T05:46:00,SUB0061,1,True
+PAY00049,CUST0249,1999900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-15T07:34:00,,1,True
+PAY00050,CUST0201,499900,INR,DO_NOT_HONOR,bank_declined,2026-08-15T14:49:00,SUB0136,1,True
+PAY00051,CUST0108,99900,INR,Transaction failed,other,2026-08-09T01:41:00,SUB0027,1,False
+PAY00052,CUST0183,1999900,INR,Gateway timeout,network_error,2026-08-06T08:28:00,SUB0112,1,True
+PAY00053,CUST0024,149900,INR,Transaction failed,other,2026-08-01T13:03:00,SUB0099,1,True
+PAY00054,CUST0021,49900,INR,Card has expired,card_expired,2026-08-21T10:50:00,SUB0121,1,True
+PAY00055,CUST0179,499900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-01T02:01:00,,1,True
+PAY00056,CUST0141,49900,INR,Unknown error occurred,other,2026-08-10T07:19:00,SUB0118,1,True
+PAY00057,CUST0017,49900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-21T16:36:00,SUB0110,1,True
+PAY00058,CUST0001,99900,INR,DO_NOT_HONOR,bank_declined,2026-08-03T16:23:00,SUB0130,1,True
+PAY00059,CUST0202,49900,INR,Payment could not be processed,other,2026-08-21T12:23:00,SUB0018,1,True
+PAY00060,CUST0089,999900,INR,Insufficient balance in account,insufficient_funds,2026-08-11T04:02:00,SUB0045,1,True
+PAY00061,CUST0213,299900,INR,"Network error, please retry",network_error,2026-08-21T05:51:00,,1,True
+PAY00062,CUST0242,1999900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-07T01:20:00,SUB0140,1,False
+PAY00063,CUST0122,1999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-02T20:21:00,,1,True
+PAY00064,CUST0112,299900,INR,CVV verification failed,invalid_cvv,2026-08-11T05:31:00,SUB0133,1,True
+PAY00065,CUST0069,299900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-20T05:34:00,SUB0084,1,True
+PAY00066,CUST0170,299900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-06T22:28:00,SUB0091,1,True
+PAY00067,CUST0158,1999900,INR,Payment could not be processed,other,2026-08-02T02:42:00,SUB0041,1,False
+PAY00068,CUST0244,99900,INR,Transaction failed,insufficient_funds,2026-08-21T11:23:00,SUB0040,1,True
+PAY00069,CUST0174,1999900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-03T18:08:00,SUB0072,1,False
+PAY00070,CUST0064,299900,INR,Transaction failed,other,2026-08-17T12:58:00,SUB0067,1,False
+PAY00071,CUST0181,299900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-07T03:08:00,SUB0114,1,False
+PAY00072,CUST0023,999900,INR,"Network error, please retry",network_error,2026-08-03T17:34:00,SUB0041,1,True
+PAY00073,CUST0183,1999900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-12T16:14:00,SUB0036,1,True
+PAY00074,CUST0061,499900,INR,Gateway timeout,network_error,2026-08-12T14:51:00,SUB0023,1,False
+PAY00075,CUST0017,499900,INR,This card is no longer valid,card_expired,2026-08-14T13:52:00,SUB0082,1,False
+PAY00076,CUST0165,149900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-05T17:40:00,,1,True
+PAY00077,CUST0034,499900,INR,Declined by issuing bank,bank_declined,2026-08-05T09:10:00,,1,True
+PAY00078,CUST0058,1999900,INR,This card is no longer valid,card_expired,2026-08-03T08:12:00,SUB0033,1,False
+PAY00079,CUST0161,999900,INR,This card is no longer valid,card_expired,2026-08-06T18:37:00,,1,True
+PAY00080,CUST0185,499900,INR,CVV verification failed,invalid_cvv,2026-08-02T00:05:00,,1,True
+PAY00081,CUST0148,299900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-20T20:01:00,,1,True
+PAY00082,CUST0075,1999900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-13T09:29:00,SUB0113,1,True
+PAY00083,CUST0107,99900,INR,DO_NOT_HONOR,bank_declined,2026-08-11T22:20:00,,1,False
+PAY00084,CUST0250,49900,INR,EXPIRED_CARD,card_expired,2026-08-11T07:29:00,SUB0037,1,True
+PAY00085,CUST0025,299900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-08T05:52:00,SUB0081,1,True
+PAY00086,CUST0049,299900,INR,"Network error, please retry",network_error,2026-08-16T09:31:00,,1,True
+PAY00087,CUST0130,149900,INR,DO_NOT_HONOR,bank_declined,2026-08-02T01:18:00,,1,False
+PAY00088,CUST0168,1999900,INR,"Network error, please retry",network_error,2026-08-04T13:08:00,,1,False
+PAY00089,CUST0196,499900,INR,Card has expired,card_expired,2026-08-18T06:23:00,SUB0130,1,False
+PAY00090,CUST0116,499900,INR,"Network error, please retry",network_error,2026-08-20T03:08:00,SUB0087,1,False
+PAY00091,CUST0143,499900,INR,Transaction failed,other,2026-08-13T16:02:00,SUB0086,1,True
+PAY00092,CUST0206,499900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-05T10:59:00,SUB0077,1,False
+PAY00093,CUST0152,999900,INR,This card is no longer valid,card_expired,2026-08-19T09:30:00,SUB0029,1,False
+PAY00094,CUST0107,149900,INR,Declined by issuing bank,bank_declined,2026-08-21T18:36:00,SUB0123,1,True
+PAY00095,CUST0044,999900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-08T01:36:00,SUB0005,1,False
+PAY00096,CUST0113,99900,INR,Card has expired,card_expired,2026-08-14T16:49:00,SUB0016,1,False
+PAY00097,CUST0181,999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-16T16:24:00,SUB0137,1,True
+PAY00098,CUST0088,99900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-08T08:35:00,,1,True
+PAY00099,CUST0077,999900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-16T10:30:00,,1,True
+PAY00100,CUST0204,999900,INR,"Network error, please retry",network_error,2026-08-18T12:57:00,,1,False
+PAY00101,CUST0245,149900,INR,Gateway timeout,network_error,2026-08-03T11:59:00,SUB0123,1,True
+PAY00102,CUST0055,999900,INR,Txn declined - low balance,insufficient_funds,2026-08-09T04:06:00,SUB0063,1,True
+PAY00103,CUST0013,49900,INR,DO_NOT_HONOR,bank_declined,2026-08-04T13:21:00,SUB0036,1,False
+PAY00104,CUST0002,299900,INR,Transaction failed,other,2026-08-16T20:12:00,SUB0074,1,False
+PAY00105,CUST0166,99900,INR,Insufficient balance in account,insufficient_funds,2026-08-18T23:46:00,SUB0045,1,False
+PAY00106,CUST0107,49900,INR,Incorrect CVV entered,invalid_cvv,2026-08-13T15:11:00,,1,False
+PAY00107,CUST0238,499900,INR,Unknown error occurred,insufficient_funds,2026-08-04T10:18:00,,1,True
+PAY00108,CUST0135,299900,INR,DO_NOT_HONOR,bank_declined,2026-08-09T06:51:00,SUB0118,1,True
+PAY00109,CUST0166,1999900,INR,Payment could not be processed,insufficient_funds,2026-08-10T18:43:00,SUB0104,1,False
+PAY00110,CUST0212,999900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-04T05:08:00,,1,True
+PAY00111,CUST0002,149900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-11T09:37:00,SUB0093,1,False
+PAY00112,CUST0178,99900,INR,Insufficient balance in account,insufficient_funds,2026-08-13T21:32:00,,1,False
+PAY00113,CUST0198,149900,INR,Card has expired,card_expired,2026-08-12T19:14:00,SUB0040,1,True
+PAY00114,CUST0117,999900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-18T15:48:00,,1,True
+PAY00115,CUST0056,1999900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-03T16:28:00,SUB0145,1,True
+PAY00116,CUST0029,99900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-06T10:54:00,SUB0053,1,True
+PAY00117,CUST0184,299900,INR,Declined by issuing bank,bank_declined,2026-08-02T14:08:00,SUB0015,1,False
+PAY00118,CUST0144,299900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-09T00:47:00,SUB0109,1,True
+PAY00119,CUST0089,49900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-16T01:18:00,,1,True
+PAY00120,CUST0197,299900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-15T12:24:00,,1,True
+PAY00121,CUST0224,499900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-13T16:08:00,SUB0001,1,False
+PAY00122,CUST0194,999900,INR,Txn declined - low balance,insufficient_funds,2026-08-18T13:34:00,SUB0118,1,True
+PAY00123,CUST0089,999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-04T01:51:00,,1,True
+PAY00124,CUST0240,49900,INR,Incorrect CVV entered,invalid_cvv,2026-08-04T19:02:00,,1,True
+PAY00125,CUST0224,99900,INR,Insufficient balance in account,insufficient_funds,2026-08-18T06:48:00,SUB0129,1,False
+PAY00126,CUST0075,1999900,INR,Txn declined - low balance,insufficient_funds,2026-08-11T07:19:00,,1,False
+PAY00127,CUST0134,499900,INR,Txn declined - low balance,insufficient_funds,2026-08-19T23:58:00,,1,True
+PAY00128,CUST0143,999900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-13T16:20:00,SUB0077,1,False
+PAY00129,CUST0097,99900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-10T22:09:00,,1,False
+PAY00130,CUST0144,99900,INR,EXPIRED_CARD,card_expired,2026-08-13T07:16:00,,1,True
+PAY00131,CUST0237,999900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-07T01:17:00,,1,False
+PAY00132,CUST0011,499900,INR,Incorrect CVV entered,invalid_cvv,2026-08-18T06:30:00,,1,True
+PAY00133,CUST0078,99900,INR,Transaction failed,other,2026-08-04T23:48:00,SUB0053,1,False
+PAY00134,CUST0102,299900,INR,CVV verification failed,invalid_cvv,2026-08-15T17:41:00,SUB0132,1,True
+PAY00135,CUST0226,999900,INR,Declined by issuing bank,bank_declined,2026-08-16T10:58:00,SUB0012,1,True
+PAY00136,CUST0145,499900,INR,Unknown error occurred,invalid_cvv,2026-08-19T23:26:00,SUB0059,1,True
+PAY00137,CUST0098,999900,INR,DO_NOT_HONOR,bank_declined,2026-08-11T08:48:00,,1,False
+PAY00138,CUST0165,1999900,INR,"Network error, please retry",network_error,2026-08-12T05:08:00,SUB0139,1,True
+PAY00139,CUST0165,1999900,INR,Transaction failed,other,2026-08-02T00:26:00,,1,True
+PAY00140,CUST0018,299900,INR,Gateway timeout,network_error,2026-08-12T01:39:00,,1,True
+PAY00141,CUST0234,499900,INR,Unknown error occurred,bank_declined,2026-08-14T00:01:00,SUB0074,1,False
+PAY00142,CUST0005,99900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-04T03:33:00,SUB0135,1,True
+PAY00143,CUST0065,49900,INR,"Network error, please retry",network_error,2026-08-12T12:29:00,,1,True
+PAY00144,CUST0058,1999900,INR,Insufficient balance in account,insufficient_funds,2026-08-21T01:05:00,SUB0122,1,True
+PAY00145,CUST0015,1999900,INR,DO_NOT_HONOR,bank_declined,2026-08-14T20:50:00,,1,True
+PAY00146,CUST0250,1999900,INR,Insufficient balance in account,insufficient_funds,2026-08-19T15:17:00,SUB0072,1,True
+PAY00147,CUST0231,1999900,INR,Declined by issuing bank,bank_declined,2026-08-11T00:13:00,,1,False
+PAY00148,CUST0183,499900,INR,Gateway timeout,network_error,2026-08-08T18:53:00,,1,True
+PAY00149,CUST0139,999900,INR,This card is no longer valid,card_expired,2026-08-03T16:47:00,SUB0112,1,False
+PAY00150,CUST0060,499900,INR,"Network error, please retry",network_error,2026-08-20T12:49:00,,1,True
+PAY00151,CUST0201,499900,INR,Payment could not be processed,other,2026-08-13T13:11:00,,1,False
+PAY00152,CUST0022,999900,INR,"Network error, please retry",network_error,2026-08-03T02:17:00,,1,True
+PAY00153,CUST0163,49900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-03T00:19:00,,1,True
+PAY00154,CUST0027,499900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-18T16:26:00,SUB0142,1,True
+PAY00155,CUST0024,49900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-10T13:24:00,,1,False
+PAY00156,CUST0144,99900,INR,Incorrect CVV entered,invalid_cvv,2026-08-13T05:08:00,SUB0038,1,True
+PAY00157,CUST0017,299900,INR,Txn declined - low balance,insufficient_funds,2026-08-03T11:16:00,,1,False
+PAY00158,CUST0127,99900,INR,DO_NOT_HONOR,bank_declined,2026-08-10T00:25:00,,1,True
+PAY00159,CUST0206,1999900,INR,CVV verification failed,invalid_cvv,2026-08-21T19:08:00,,1,True
+PAY00160,CUST0178,299900,INR,Txn declined - low balance,insufficient_funds,2026-08-11T09:47:00,SUB0148,1,True
+PAY00161,CUST0201,1999900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-13T11:07:00,SUB0140,1,False
+PAY00162,CUST0047,299900,INR,Unknown error occurred,network_error,2026-08-07T14:51:00,,1,True
+PAY00163,CUST0210,99900,INR,"Network error, please retry",network_error,2026-08-21T09:15:00,SUB0109,1,True
+PAY00164,CUST0203,299900,INR,EXPIRED_CARD,card_expired,2026-08-19T12:34:00,,1,False
+PAY00165,CUST0178,149900,INR,Card has expired,card_expired,2026-08-18T19:40:00,SUB0064,1,False
+PAY00166,CUST0169,49900,INR,DO_NOT_HONOR,bank_declined,2026-08-19T20:43:00,,1,False
+PAY00167,CUST0085,49900,INR,Payment could not be processed,other,2026-08-09T07:32:00,SUB0148,1,False
+PAY00168,CUST0057,999900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-19T22:32:00,,1,True
+PAY00169,CUST0124,49900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-04T23:09:00,SUB0053,1,True
+PAY00170,CUST0134,999900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-15T10:04:00,,1,True
+PAY00171,CUST0030,999900,INR,Txn declined - low balance,insufficient_funds,2026-08-06T23:15:00,SUB0085,1,True
+PAY00172,CUST0144,299900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-21T05:11:00,SUB0008,1,False
+PAY00173,CUST0189,299900,INR,DO_NOT_HONOR,bank_declined,2026-08-13T00:45:00,SUB0017,1,True
+PAY00174,CUST0148,99900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-15T03:16:00,SUB0081,1,True
+PAY00175,CUST0153,149900,INR,EXPIRED_CARD,card_expired,2026-08-12T14:39:00,,1,False
+PAY00176,CUST0205,149900,INR,Insufficient balance in account,insufficient_funds,2026-08-04T07:19:00,SUB0037,1,True
+PAY00177,CUST0131,299900,INR,This card is no longer valid,card_expired,2026-08-14T05:31:00,,1,False
+PAY00178,CUST0166,299900,INR,Transaction failed,other,2026-08-10T04:11:00,SUB0014,1,True
+PAY00179,CUST0222,99900,INR,Card has expired,card_expired,2026-08-13T17:32:00,SUB0126,1,False
+PAY00180,CUST0107,49900,INR,"Network error, please retry",network_error,2026-08-19T00:50:00,SUB0071,1,True
+PAY00181,CUST0058,499900,INR,DO_NOT_HONOR,bank_declined,2026-08-16T17:32:00,SUB0140,1,True
+PAY00182,CUST0211,49900,INR,Unknown error occurred,other,2026-08-15T17:13:00,SUB0064,1,False
+PAY00183,CUST0077,149900,INR,Incorrect CVV entered,invalid_cvv,2026-08-03T14:55:00,,1,False
+PAY00184,CUST0061,499900,INR,Txn declined - low balance,insufficient_funds,2026-08-21T13:10:00,,1,True
+PAY00185,CUST0209,499900,INR,Insufficient balance in account,insufficient_funds,2026-08-09T19:34:00,,1,True
+PAY00186,CUST0075,499900,INR,Txn declined - low balance,insufficient_funds,2026-08-04T04:48:00,,1,False
+PAY00187,CUST0071,99900,INR,Incorrect CVV entered,invalid_cvv,2026-08-08T04:45:00,SUB0101,1,True
+PAY00188,CUST0126,299900,INR,Txn declined - low balance,insufficient_funds,2026-08-15T02:40:00,,1,False
+PAY00189,CUST0104,149900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-15T15:20:00,,1,False
+PAY00190,CUST0217,999900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-12T02:50:00,SUB0110,1,True
+PAY00191,CUST0212,149900,INR,Txn declined - low balance,insufficient_funds,2026-08-11T17:36:00,,1,True
+PAY00192,CUST0202,49900,INR,This card is no longer valid,card_expired,2026-08-04T20:50:00,SUB0041,1,False
+PAY00193,CUST0113,999900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-05T20:19:00,,1,True
+PAY00194,CUST0071,149900,INR,Txn declined - low balance,insufficient_funds,2026-08-21T05:03:00,SUB0060,1,True
+PAY00195,CUST0110,49900,INR,Payment could not be processed,bank_declined,2026-08-05T18:14:00,SUB0003,1,False
+PAY00196,CUST0179,299900,INR,Card has expired,card_expired,2026-08-05T15:04:00,SUB0027,1,False
+PAY00197,CUST0027,1999900,INR,EXPIRED_CARD,card_expired,2026-08-05T20:43:00,SUB0003,1,True
+PAY00198,CUST0157,99900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-21T23:09:00,,1,False
+PAY00199,CUST0114,99900,INR,Incorrect CVV entered,invalid_cvv,2026-08-04T18:46:00,,1,True
+PAY00200,CUST0081,49900,INR,Gateway timeout,network_error,2026-08-08T17:38:00,,1,True
+PAY00201,CUST0200,999900,INR,Transaction failed,other,2026-08-10T06:33:00,SUB0101,1,False
+PAY00202,CUST0076,49900,INR,DO_NOT_HONOR,bank_declined,2026-08-08T15:40:00,SUB0004,1,False
+PAY00203,CUST0093,1999900,INR,Transaction failed,other,2026-08-19T13:23:00,SUB0121,1,False
+PAY00204,CUST0245,49900,INR,Transaction failed,other,2026-08-09T06:02:00,,1,False
+PAY00205,CUST0102,299900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-03T20:34:00,SUB0022,1,False
+PAY00206,CUST0080,99900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-18T10:25:00,,1,True
+PAY00207,CUST0167,299900,INR,Gateway timeout,network_error,2026-08-08T01:15:00,SUB0117,1,True
+PAY00208,CUST0157,999900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-06T03:00:00,,1,False
+PAY00209,CUST0042,1999900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-09T05:23:00,,1,True
+PAY00210,CUST0069,49900,INR,Gateway timeout,network_error,2026-08-11T13:17:00,SUB0148,1,True
+PAY00211,CUST0161,49900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-16T18:10:00,SUB0027,1,True
+PAY00212,CUST0229,499900,INR,Declined by issuing bank,bank_declined,2026-08-01T01:54:00,SUB0121,1,False
+PAY00213,CUST0094,1999900,INR,Card has expired,card_expired,2026-08-02T17:51:00,,1,False
+PAY00214,CUST0108,999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-11T08:52:00,SUB0129,1,True
+PAY00215,CUST0173,499900,INR,Incorrect CVV entered,invalid_cvv,2026-08-02T12:04:00,,1,False
+PAY00216,CUST0199,299900,INR,"Network error, please retry",network_error,2026-08-01T11:12:00,,1,True
+PAY00217,CUST0190,299900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-07T23:57:00,,1,False
+PAY00218,CUST0039,149900,INR,Unknown error occurred,insufficient_funds,2026-08-21T22:56:00,SUB0097,1,True
+PAY00219,CUST0218,499900,INR,"Network error, please retry",network_error,2026-08-08T13:31:00,,1,False
+PAY00220,CUST0037,1999900,INR,Transaction failed,network_error,2026-08-17T13:44:00,SUB0022,1,True
+PAY00221,CUST0149,299900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-03T18:36:00,,1,True
+PAY00222,CUST0034,1999900,INR,Txn declined - low balance,insufficient_funds,2026-08-13T22:53:00,SUB0070,1,False
+PAY00223,CUST0060,1999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-19T03:09:00,SUB0081,1,True
+PAY00224,CUST0105,99900,INR,Txn declined - low balance,insufficient_funds,2026-08-15T09:29:00,SUB0041,1,True
+PAY00225,CUST0207,49900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-07T10:09:00,SUB0092,1,True
+PAY00226,CUST0102,99900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-01T12:54:00,,1,False
+PAY00227,CUST0064,99900,INR,Insufficient balance in account,insufficient_funds,2026-08-04T00:03:00,,1,False
+PAY00228,CUST0034,999900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-21T02:37:00,,1,True
+PAY00229,CUST0020,999900,INR,Insufficient balance in account,insufficient_funds,2026-08-15T04:05:00,,1,False
+PAY00230,CUST0085,299900,INR,Unknown error occurred,insufficient_funds,2026-08-13T15:01:00,SUB0091,1,True
+PAY00231,CUST0055,99900,INR,CVV verification failed,invalid_cvv,2026-08-02T19:39:00,,1,True
+PAY00232,CUST0128,49900,INR,This card is no longer valid,card_expired,2026-08-09T12:08:00,,1,False
+PAY00233,CUST0205,1999900,INR,Declined by issuing bank,bank_declined,2026-08-12T15:34:00,SUB0145,1,False
+PAY00234,CUST0129,149900,INR,EXPIRED_CARD,card_expired,2026-08-20T07:01:00,,1,False
+PAY00235,CUST0015,1999900,INR,"Network error, please retry",network_error,2026-08-19T07:10:00,,1,True
+PAY00236,CUST0069,99900,INR,Declined by issuing bank,bank_declined,2026-08-19T12:22:00,,1,False
+PAY00237,CUST0045,999900,INR,Txn declined - low balance,insufficient_funds,2026-08-12T18:01:00,SUB0146,1,False
+PAY00238,CUST0145,1999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-16T17:19:00,SUB0015,1,True
+PAY00239,CUST0060,49900,INR,Declined by issuing bank,bank_declined,2026-08-11T19:12:00,SUB0046,1,False
+PAY00240,CUST0236,499900,INR,Transaction failed,network_error,2026-08-05T03:54:00,SUB0019,1,True
+PAY00241,CUST0096,49900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-11T09:20:00,SUB0112,1,True
+PAY00242,CUST0203,99900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-18T22:56:00,,1,False
+PAY00243,CUST0058,999900,INR,DO_NOT_HONOR,bank_declined,2026-08-10T04:11:00,,1,False
+PAY00244,CUST0243,149900,INR,Declined by issuing bank,bank_declined,2026-08-20T07:40:00,,1,False
+PAY00245,CUST0037,149900,INR,Card has expired,card_expired,2026-08-06T20:56:00,,1,False
+PAY00246,CUST0172,149900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-07T07:44:00,SUB0028,1,True
+PAY00247,CUST0185,299900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-06T13:31:00,SUB0097,1,False
+PAY00248,CUST0026,999900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-08T05:28:00,,1,True
+PAY00249,CUST0076,49900,INR,Txn declined - low balance,insufficient_funds,2026-08-11T05:56:00,,1,True
+PAY00250,CUST0141,499900,INR,Transaction failed,other,2026-08-16T22:01:00,,1,False
+PAY00251,CUST0156,99900,INR,Payment could not be processed,invalid_cvv,2026-08-07T13:44:00,,1,True
+PAY00252,CUST0139,49900,INR,Txn declined - low balance,insufficient_funds,2026-08-02T12:36:00,SUB0014,1,True
+PAY00253,CUST0093,999900,INR,Insufficient balance in account,insufficient_funds,2026-08-21T19:30:00,SUB0044,1,True
+PAY00254,CUST0164,49900,INR,Insufficient balance in account,insufficient_funds,2026-08-10T12:30:00,,1,True
+PAY00255,CUST0024,299900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-12T05:28:00,SUB0068,1,True
+PAY00256,CUST0058,999900,INR,Unknown error occurred,network_error,2026-08-04T02:42:00,SUB0059,1,True
+PAY00257,CUST0142,299900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-18T21:55:00,SUB0061,1,False
+PAY00258,CUST0122,999900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-02T16:36:00,,1,False
+PAY00259,CUST0174,1999900,INR,Transaction failed,other,2026-08-15T05:10:00,,1,False
+PAY00260,CUST0033,299900,INR,Insufficient balance in account,insufficient_funds,2026-08-07T20:09:00,SUB0018,1,False
+PAY00261,CUST0023,1999900,INR,EXPIRED_CARD,card_expired,2026-08-09T16:29:00,SUB0134,1,False
+PAY00262,CUST0201,499900,INR,EXPIRED_CARD,card_expired,2026-08-19T18:48:00,SUB0028,1,False
+PAY00263,CUST0145,149900,INR,"Network error, please retry",network_error,2026-08-14T08:24:00,SUB0122,1,True
+PAY00264,CUST0010,499900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-13T01:25:00,SUB0061,1,False
+PAY00265,CUST0013,49900,INR,"Network error, please retry",network_error,2026-08-11T09:19:00,SUB0026,1,True
+PAY00266,CUST0249,999900,INR,Incorrect CVV entered,invalid_cvv,2026-08-15T10:17:00,,1,True
+PAY00267,CUST0023,299900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-16T16:55:00,SUB0041,1,True
+PAY00268,CUST0017,1999900,INR,This card is no longer valid,card_expired,2026-08-17T18:01:00,,1,False
+PAY00269,CUST0052,149900,INR,Transaction failed,network_error,2026-08-07T08:23:00,SUB0032,1,True
+PAY00270,CUST0175,299900,INR,Txn declined - low balance,insufficient_funds,2026-08-06T15:37:00,SUB0067,1,False
+PAY00271,CUST0192,299900,INR,Gateway timeout,network_error,2026-08-02T05:54:00,,1,True
+PAY00272,CUST0220,149900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-21T13:32:00,,1,True
+PAY00273,CUST0197,999900,INR,"Network error, please retry",network_error,2026-08-06T19:51:00,SUB0079,1,True
+PAY00274,CUST0183,299900,INR,Unknown error occurred,other,2026-08-12T14:16:00,SUB0134,1,True
+PAY00275,CUST0212,1999900,INR,Unknown error occurred,bank_declined,2026-08-12T17:41:00,SUB0028,1,False
+PAY00276,CUST0124,1999900,INR,Txn declined - low balance,insufficient_funds,2026-08-09T08:41:00,,1,False
+PAY00277,CUST0077,1999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-20T12:42:00,SUB0007,1,True
+PAY00278,CUST0168,299900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-13T12:47:00,,1,True
+PAY00279,CUST0147,99900,INR,"Network error, please retry",network_error,2026-08-18T20:50:00,,1,True
+PAY00280,CUST0092,499900,INR,DO_NOT_HONOR,bank_declined,2026-08-06T09:06:00,,1,True
+PAY00281,CUST0186,149900,INR,Gateway timeout,network_error,2026-08-21T02:14:00,,1,True
+PAY00282,CUST0079,499900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-10T14:54:00,SUB0150,1,True
+PAY00283,CUST0149,99900,INR,Transaction failed,other,2026-08-17T03:55:00,SUB0106,1,False
+PAY00284,CUST0014,99900,INR,Incorrect CVV entered,invalid_cvv,2026-08-11T13:36:00,,1,False
+PAY00285,CUST0037,49900,INR,This card is no longer valid,card_expired,2026-08-16T10:40:00,SUB0015,1,False
+PAY00286,CUST0002,99900,INR,DO_NOT_HONOR,bank_declined,2026-08-19T05:31:00,,1,False
+PAY00287,CUST0034,299900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-13T00:02:00,,1,False
+PAY00288,CUST0244,499900,INR,Txn declined - low balance,insufficient_funds,2026-08-07T00:43:00,,1,True
+PAY00289,CUST0058,49900,INR,"Network error, please retry",network_error,2026-08-13T16:37:00,SUB0012,1,True
+PAY00290,CUST0077,499900,INR,Payment could not be processed,other,2026-08-17T10:27:00,,1,False
+PAY00291,CUST0088,99900,INR,Payment could not be processed,other,2026-08-06T12:01:00,,1,True
+PAY00292,CUST0034,99900,INR,Insufficient balance in account,insufficient_funds,2026-08-04T11:45:00,SUB0066,1,True
+PAY00293,CUST0198,49900,INR,Declined by issuing bank,bank_declined,2026-08-04T20:53:00,,1,True
+PAY00294,CUST0107,299900,INR,Declined by issuing bank,bank_declined,2026-08-05T06:44:00,SUB0108,1,False
+PAY00295,CUST0170,999900,INR,Txn declined - low balance,insufficient_funds,2026-08-05T13:53:00,SUB0031,1,False
+PAY00296,CUST0073,499900,INR,Insufficient balance in account,insufficient_funds,2026-08-07T08:53:00,SUB0105,1,True
+PAY00297,CUST0076,999900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-16T10:15:00,,1,True
+PAY00298,CUST0233,49900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-17T02:46:00,,1,False
+PAY00299,CUST0165,49900,INR,Txn declined - low balance,insufficient_funds,2026-08-04T05:55:00,SUB0081,1,True
+PAY00300,CUST0110,49900,INR,Gateway timeout,network_error,2026-08-01T04:42:00,SUB0113,1,True
+PAY00301,CUST0245,149900,INR,Declined by issuing bank,bank_declined,2026-08-06T03:25:00,SUB0099,1,False
+PAY00302,CUST0177,1999900,INR,CVV verification failed,invalid_cvv,2026-08-06T03:08:00,SUB0041,1,True
+PAY00303,CUST0027,499900,INR,This card is no longer valid,card_expired,2026-08-15T05:39:00,SUB0008,1,False
+PAY00304,CUST0221,99900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-16T15:07:00,SUB0017,1,True
+PAY00305,CUST0067,999900,INR,Declined by issuing bank,bank_declined,2026-08-17T23:36:00,SUB0087,1,False
+PAY00306,CUST0133,999900,INR,Declined by issuing bank,bank_declined,2026-08-08T15:22:00,,1,False
+PAY00307,CUST0039,499900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-02T00:41:00,SUB0121,1,False
+PAY00308,CUST0219,149900,INR,Payment could not be processed,bank_declined,2026-08-08T10:17:00,SUB0097,1,True
+PAY00309,CUST0104,1999900,INR,Gateway timeout,network_error,2026-08-19T14:05:00,SUB0031,1,False
+PAY00310,CUST0128,299900,INR,Gateway timeout,network_error,2026-08-02T17:35:00,SUB0078,1,True
+PAY00311,CUST0228,299900,INR,DO_NOT_HONOR,bank_declined,2026-08-11T11:52:00,SUB0117,1,True
+PAY00312,CUST0085,149900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-15T03:06:00,SUB0088,1,False
+PAY00313,CUST0091,149900,INR,"Network error, please retry",network_error,2026-08-04T01:57:00,SUB0105,1,True
+PAY00314,CUST0028,1999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-13T06:29:00,SUB0087,1,False
+PAY00315,CUST0028,1999900,INR,Gateway timeout,network_error,2026-08-19T03:49:00,SUB0130,1,False
+PAY00316,CUST0035,49900,INR,Transaction failed,other,2026-08-18T13:53:00,,1,False
+PAY00317,CUST0200,99900,INR,Incorrect CVV entered,invalid_cvv,2026-08-05T03:24:00,,1,True
+PAY00318,CUST0083,499900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-08T08:25:00,,1,False
+PAY00319,CUST0116,999900,INR,Gateway timeout,network_error,2026-08-17T09:53:00,,1,True
+PAY00320,CUST0183,99900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-07T19:45:00,SUB0034,1,True
+PAY00321,CUST0182,999900,INR,DO_NOT_HONOR,bank_declined,2026-08-21T10:45:00,SUB0123,1,True
+PAY00322,CUST0150,1999900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-18T09:56:00,,1,False
+PAY00323,CUST0134,999900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-02T06:17:00,SUB0074,1,False
+PAY00324,CUST0175,149900,INR,Insufficient balance in account,insufficient_funds,2026-08-07T17:02:00,SUB0144,1,True
+PAY00325,CUST0222,1999900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-10T22:42:00,SUB0107,1,True
+PAY00326,CUST0245,499900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-02T00:47:00,,1,True
+PAY00327,CUST0200,999900,INR,CVV verification failed,invalid_cvv,2026-08-21T11:48:00,,1,True
+PAY00328,CUST0051,99900,INR,Gateway timeout,network_error,2026-08-03T05:11:00,SUB0011,1,True
+PAY00329,CUST0110,499900,INR,Txn declined - low balance,insufficient_funds,2026-08-09T00:21:00,,1,True
+PAY00330,CUST0011,1999900,INR,Txn declined - low balance,insufficient_funds,2026-08-21T19:53:00,SUB0147,1,True
+PAY00331,CUST0141,99900,INR,This card is no longer valid,card_expired,2026-08-06T16:04:00,SUB0140,1,False
+PAY00332,CUST0138,99900,INR,EXPIRED_CARD,card_expired,2026-08-11T10:23:00,,1,False
+PAY00333,CUST0159,149900,INR,Declined by issuing bank,bank_declined,2026-08-15T07:57:00,,1,False
+PAY00334,CUST0063,299900,INR,Unknown error occurred,other,2026-08-04T12:16:00,SUB0133,1,False
+PAY00335,CUST0211,299900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-16T01:18:00,SUB0132,1,True
+PAY00336,CUST0022,1999900,INR,Transaction failed,other,2026-08-18T17:00:00,SUB0055,1,False
+PAY00337,CUST0222,1999900,INR,Gateway timeout,network_error,2026-08-14T20:52:00,,1,False
+PAY00338,CUST0040,49900,INR,Transaction failed,insufficient_funds,2026-08-06T08:35:00,,1,True
+PAY00339,CUST0234,299900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-14T10:01:00,SUB0002,1,True
+PAY00340,CUST0165,499900,INR,Gateway timeout,network_error,2026-08-02T22:54:00,,1,True
+PAY00341,CUST0028,149900,INR,Txn declined - low balance,insufficient_funds,2026-08-15T12:25:00,SUB0041,1,False
+PAY00342,CUST0137,1999900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-18T09:40:00,,1,True
+PAY00343,CUST0235,49900,INR,Unknown error occurred,other,2026-08-18T17:09:00,SUB0101,1,True
+PAY00344,CUST0138,999900,INR,Declined by issuing bank,bank_declined,2026-08-12T06:26:00,,1,False
+PAY00345,CUST0037,149900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-07T03:11:00,SUB0014,1,True
+PAY00346,CUST0218,499900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-03T09:42:00,SUB0149,1,True
+PAY00347,CUST0125,999900,INR,Payment could not be processed,other,2026-08-08T03:18:00,,1,False
+PAY00348,CUST0082,149900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-19T04:36:00,,1,False
+PAY00349,CUST0246,1999900,INR,Declined by issuing bank,bank_declined,2026-08-08T22:47:00,SUB0093,1,False
+PAY00350,CUST0035,299900,INR,"Network error, please retry",network_error,2026-08-15T11:49:00,SUB0045,1,True
+PAY00351,CUST0166,99900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-18T06:16:00,,1,False
+PAY00352,CUST0187,999900,INR,Insufficient balance in account,insufficient_funds,2026-08-01T18:37:00,SUB0010,1,True
+PAY00353,CUST0142,99900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-12T12:14:00,SUB0075,1,False
+PAY00354,CUST0035,499900,INR,Declined by issuing bank,bank_declined,2026-08-01T21:15:00,,1,False
+PAY00355,CUST0158,99900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-06T18:36:00,,1,True
+PAY00356,CUST0189,99900,INR,Payment could not be processed,network_error,2026-08-03T08:23:00,,1,True
+PAY00357,CUST0133,299900,INR,CVV verification failed,invalid_cvv,2026-08-02T01:41:00,,1,True
+PAY00358,CUST0134,149900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-19T17:36:00,,1,True
+PAY00359,CUST0094,299900,INR,Declined by issuing bank,bank_declined,2026-08-08T16:25:00,,1,False
+PAY00360,CUST0125,299900,INR,Transaction failed,network_error,2026-08-06T07:04:00,SUB0039,1,True
+PAY00361,CUST0048,299900,INR,Insufficient balance in account,insufficient_funds,2026-08-11T23:07:00,SUB0054,1,True
+PAY00362,CUST0152,99900,INR,Transaction failed,insufficient_funds,2026-08-19T18:10:00,SUB0147,1,True
+PAY00363,CUST0038,499900,INR,Txn declined - low balance,insufficient_funds,2026-08-13T19:36:00,,1,True
+PAY00364,CUST0187,99900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-15T19:30:00,SUB0106,1,False
+PAY00365,CUST0154,499900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-09T05:46:00,,1,False
+PAY00366,CUST0153,99900,INR,DO_NOT_HONOR,bank_declined,2026-08-04T00:12:00,,1,False
+PAY00367,CUST0176,99900,INR,Card has expired,card_expired,2026-08-16T19:38:00,,1,True
+PAY00368,CUST0129,99900,INR,Gateway timeout,network_error,2026-08-20T17:52:00,,1,True
+PAY00369,CUST0174,49900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-17T13:14:00,SUB0098,1,False
+PAY00370,CUST0090,149900,INR,Declined by issuing bank,bank_declined,2026-08-16T07:58:00,SUB0140,1,False
+PAY00371,CUST0105,1999900,INR,Insufficient balance in account,insufficient_funds,2026-08-01T18:33:00,SUB0053,1,True
+PAY00372,CUST0177,99900,INR,"Network error, please retry",network_error,2026-08-14T20:37:00,,1,True
+PAY00373,CUST0109,299900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-07T13:35:00,SUB0095,1,False
+PAY00374,CUST0144,499900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-12T22:25:00,,1,False
+PAY00375,CUST0169,999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-06T03:13:00,,1,True
+PAY00376,CUST0206,999900,INR,Declined by issuing bank,bank_declined,2026-08-01T02:52:00,,1,True
+PAY00377,CUST0112,49900,INR,Txn declined - low balance,insufficient_funds,2026-08-20T01:46:00,,1,True
+PAY00378,CUST0158,499900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-02T05:40:00,SUB0133,1,True
+PAY00379,CUST0074,999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-02T11:15:00,,1,False
+PAY00380,CUST0023,299900,INR,Payment could not be processed,other,2026-08-13T18:12:00,,1,False
+PAY00381,CUST0018,499900,INR,CVV verification failed,invalid_cvv,2026-08-19T11:22:00,SUB0050,1,False
+PAY00382,CUST0117,299900,INR,Incorrect CVV entered,invalid_cvv,2026-08-17T03:35:00,SUB0030,1,True
+PAY00383,CUST0206,1999900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-19T08:44:00,SUB0124,1,True
+PAY00384,CUST0198,299900,INR,Txn declined - low balance,insufficient_funds,2026-08-15T18:55:00,SUB0018,1,True
+PAY00385,CUST0098,99900,INR,DO_NOT_HONOR,bank_declined,2026-08-11T13:22:00,SUB0068,1,False
+PAY00386,CUST0064,1999900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-11T02:35:00,SUB0091,1,False
+PAY00387,CUST0056,999900,INR,CVV verification failed,invalid_cvv,2026-08-07T15:47:00,,1,True
+PAY00388,CUST0224,99900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-20T11:09:00,SUB0021,1,False
+PAY00389,CUST0174,1999900,INR,Payment could not be processed,other,2026-08-18T01:54:00,,1,False
+PAY00390,CUST0127,1999900,INR,CVV verification failed,invalid_cvv,2026-08-17T08:25:00,SUB0014,1,True
+PAY00391,CUST0135,49900,INR,"Network error, please retry",network_error,2026-08-17T11:25:00,,1,True
+PAY00392,CUST0118,149900,INR,Unknown error occurred,other,2026-08-01T00:43:00,SUB0084,1,True
+PAY00393,CUST0093,149900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-08T08:30:00,SUB0048,1,False
+PAY00394,CUST0128,149900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-12T12:17:00,SUB0148,1,True
+PAY00395,CUST0176,1999900,INR,Insufficient balance in account,insufficient_funds,2026-08-08T17:27:00,SUB0039,1,False
+PAY00396,CUST0122,99900,INR,Gateway timeout,network_error,2026-08-21T16:34:00,,1,True
+PAY00397,CUST0077,999900,INR,Insufficient balance in account,insufficient_funds,2026-08-06T01:13:00,SUB0025,1,False
+PAY00398,CUST0116,499900,INR,"Network error, please retry",network_error,2026-08-18T08:22:00,SUB0051,1,True
+PAY00399,CUST0148,149900,INR,DO_NOT_HONOR,bank_declined,2026-08-12T10:43:00,,1,False
+PAY00400,CUST0115,299900,INR,CVV verification failed,invalid_cvv,2026-08-21T04:55:00,,1,True
+PAY00401,CUST0087,49900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-03T05:21:00,SUB0075,1,True
+PAY00402,CUST0182,299900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-12T23:37:00,SUB0043,1,True
+PAY00403,CUST0048,999900,INR,Incorrect CVV entered,invalid_cvv,2026-08-09T23:44:00,SUB0102,1,True
+PAY00404,CUST0027,49900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-13T16:48:00,SUB0040,1,False
+PAY00405,CUST0022,99900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-10T14:40:00,SUB0044,1,True
+PAY00406,CUST0008,149900,INR,Txn declined - low balance,insufficient_funds,2026-08-16T14:55:00,SUB0114,1,True
+PAY00407,CUST0035,499900,INR,Unknown error occurred,other,2026-08-20T14:40:00,,1,False
+PAY00408,CUST0112,299900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-18T07:51:00,SUB0106,1,True
+PAY00409,CUST0067,149900,INR,Transaction failed,insufficient_funds,2026-08-10T15:34:00,,1,True
+PAY00410,CUST0243,1999900,INR,Payment could not be processed,network_error,2026-08-10T19:14:00,SUB0049,1,True
+PAY00411,CUST0106,99900,INR,CVV verification failed,invalid_cvv,2026-08-21T12:53:00,SUB0109,1,True
+PAY00412,CUST0161,999900,INR,Txn declined - low balance,insufficient_funds,2026-08-18T08:26:00,SUB0035,1,True
+PAY00413,CUST0075,149900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-20T15:12:00,SUB0137,1,True
+PAY00414,CUST0006,99900,INR,Insufficient balance in account,insufficient_funds,2026-08-15T23:00:00,SUB0127,1,True
+PAY00415,CUST0056,299900,INR,EXPIRED_CARD,card_expired,2026-08-12T14:44:00,SUB0038,1,False
+PAY00416,CUST0015,99900,INR,Payment could not be processed,insufficient_funds,2026-08-07T08:52:00,SUB0064,1,True
+PAY00417,CUST0099,49900,INR,"Network error, please retry",network_error,2026-08-07T14:47:00,SUB0054,1,True
+PAY00418,CUST0122,99900,INR,EXPIRED_CARD,card_expired,2026-08-21T23:02:00,SUB0032,1,False
+PAY00419,CUST0065,49900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-07T03:15:00,SUB0043,1,False
+PAY00420,CUST0204,99900,INR,Insufficient balance in account,insufficient_funds,2026-08-01T01:37:00,SUB0040,1,False
+PAY00421,CUST0096,49900,INR,Gateway timeout,network_error,2026-08-20T10:59:00,,1,False
+PAY00422,CUST0016,1999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-04T04:31:00,,1,True
+PAY00423,CUST0202,299900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-07T00:44:00,,1,True
+PAY00424,CUST0065,499900,INR,CVV verification failed,invalid_cvv,2026-08-10T17:44:00,SUB0140,1,True
+PAY00425,CUST0090,1999900,INR,EXPIRED_CARD,card_expired,2026-08-20T17:10:00,SUB0076,1,True
+PAY00426,CUST0210,1999900,INR,Txn declined - low balance,insufficient_funds,2026-08-21T16:24:00,,1,False
+PAY00427,CUST0159,49900,INR,Incorrect CVV entered,invalid_cvv,2026-08-18T12:12:00,SUB0142,1,True
+PAY00428,CUST0040,149900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-04T03:33:00,SUB0034,1,False
+PAY00429,CUST0046,99900,INR,Incorrect CVV entered,invalid_cvv,2026-08-04T01:36:00,SUB0126,1,True
+PAY00430,CUST0135,499900,INR,Transaction failed,bank_declined,2026-08-03T00:59:00,,1,False
+PAY00431,CUST0238,999900,INR,Incorrect CVV entered,invalid_cvv,2026-08-02T11:35:00,,1,False
+PAY00432,CUST0211,149900,INR,Unknown error occurred,card_expired,2026-08-17T01:46:00,SUB0056,1,True
+PAY00433,CUST0246,499900,INR,Declined by issuing bank,bank_declined,2026-08-13T06:12:00,SUB0046,1,False
+PAY00434,CUST0143,1999900,INR,"Network error, please retry",network_error,2026-08-21T18:22:00,,1,True
+PAY00435,CUST0110,499900,INR,Incorrect CVV entered,invalid_cvv,2026-08-13T16:21:00,SUB0114,1,True
+PAY00436,CUST0239,149900,INR,EXPIRED_CARD,card_expired,2026-08-12T13:48:00,,1,False
+PAY00437,CUST0083,499900,INR,DO_NOT_HONOR,bank_declined,2026-08-09T11:28:00,SUB0009,1,True
+PAY00438,CUST0073,149900,INR,DO_NOT_HONOR,bank_declined,2026-08-01T09:14:00,SUB0071,1,True
+PAY00439,CUST0236,299900,INR,DO_NOT_HONOR,bank_declined,2026-08-12T04:08:00,,1,True
+PAY00440,CUST0064,299900,INR,Txn declined - low balance,insufficient_funds,2026-08-19T06:46:00,SUB0124,1,True
+PAY00441,CUST0045,149900,INR,Declined by issuing bank,bank_declined,2026-08-02T23:51:00,SUB0015,1,False
+PAY00442,CUST0236,299900,INR,"Network error, please retry",network_error,2026-08-14T03:55:00,,1,True
+PAY00443,CUST0218,999900,INR,Declined by issuing bank,bank_declined,2026-08-13T01:19:00,SUB0145,1,False
+PAY00444,CUST0039,49900,INR,This card is no longer valid,card_expired,2026-08-13T14:48:00,SUB0057,1,False
+PAY00445,CUST0111,149900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-03T15:36:00,SUB0068,1,False
+PAY00446,CUST0022,99900,INR,EXPIRED_CARD,card_expired,2026-08-05T15:35:00,SUB0147,1,False
+PAY00447,CUST0051,149900,INR,DO_NOT_HONOR,bank_declined,2026-08-14T10:43:00,SUB0106,1,False
+PAY00448,CUST0109,499900,INR,Card has expired,card_expired,2026-08-21T00:49:00,,1,False
+PAY00449,CUST0158,299900,INR,"Network error, please retry",network_error,2026-08-02T07:12:00,SUB0022,1,True
+PAY00450,CUST0029,99900,INR,Gateway timeout,network_error,2026-08-10T00:21:00,SUB0116,1,True
+PAY00451,CUST0121,99900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-07T17:33:00,SUB0037,1,False
+PAY00452,CUST0178,999900,INR,Gateway timeout,network_error,2026-08-17T01:16:00,SUB0070,1,True
+PAY00453,CUST0014,149900,INR,Unknown error occurred,bank_declined,2026-08-12T03:01:00,,1,True
+PAY00454,CUST0099,999900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-04T10:31:00,SUB0048,1,False
+PAY00455,CUST0051,999900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-01T01:15:00,SUB0126,1,False
+PAY00456,CUST0101,149900,INR,Gateway timeout,network_error,2026-08-12T20:19:00,,1,True
+PAY00457,CUST0129,299900,INR,Insufficient balance in account,insufficient_funds,2026-08-01T17:17:00,SUB0101,1,True
+PAY00458,CUST0169,999900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-20T20:43:00,SUB0040,1,True
+PAY00459,CUST0110,499900,INR,Unknown error occurred,other,2026-08-05T06:41:00,SUB0052,1,True
+PAY00460,CUST0221,1999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-05T20:59:00,SUB0018,1,True
+PAY00461,CUST0143,1999900,INR,Declined by issuing bank,bank_declined,2026-08-05T23:01:00,,1,False
+PAY00462,CUST0106,1999900,INR,Payment could not be processed,other,2026-08-21T23:17:00,SUB0034,1,True
+PAY00463,CUST0048,499900,INR,Txn declined - low balance,insufficient_funds,2026-08-08T19:14:00,SUB0021,1,True
+PAY00464,CUST0177,499900,INR,Gateway timeout,network_error,2026-08-16T22:41:00,,1,True
+PAY00465,CUST0126,49900,INR,DO_NOT_HONOR,bank_declined,2026-08-14T00:59:00,SUB0052,1,True
+PAY00466,CUST0194,299900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-20T15:44:00,SUB0064,1,True
+PAY00467,CUST0110,1999900,INR,Card has expired,card_expired,2026-08-13T23:20:00,,1,False
+PAY00468,CUST0147,299900,INR,Declined by issuing bank,bank_declined,2026-08-15T01:56:00,SUB0102,1,False
+PAY00469,CUST0189,999900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-02T06:18:00,,1,True
+PAY00470,CUST0199,149900,INR,"Network error, please retry",network_error,2026-08-20T01:44:00,SUB0116,1,True
+PAY00471,CUST0024,499900,INR,Gateway timeout,network_error,2026-08-18T04:25:00,SUB0046,1,True
+PAY00472,CUST0117,49900,INR,DO_NOT_HONOR,bank_declined,2026-08-09T10:44:00,,1,False
+PAY00473,CUST0042,999900,INR,Gateway timeout,network_error,2026-08-15T20:23:00,,1,True
+PAY00474,CUST0187,99900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-13T17:24:00,SUB0086,1,True
+PAY00475,CUST0145,99900,INR,Incorrect CVV entered,invalid_cvv,2026-08-06T22:03:00,SUB0115,1,True
+PAY00476,CUST0074,99900,INR,Declined by issuing bank,bank_declined,2026-08-01T19:48:00,SUB0128,1,True
+PAY00477,CUST0140,99900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-07T18:42:00,SUB0021,1,True
+PAY00478,CUST0154,149900,INR,DO_NOT_HONOR,bank_declined,2026-08-20T20:35:00,SUB0048,1,False
+PAY00479,CUST0038,999900,INR,Transaction failed,insufficient_funds,2026-08-19T19:19:00,SUB0028,1,True
+PAY00480,CUST0107,499900,INR,Transaction failed,other,2026-08-20T18:50:00,,1,False
+PAY00481,CUST0192,149900,INR,Declined by issuing bank,bank_declined,2026-08-11T11:57:00,SUB0110,1,True
+PAY00482,CUST0216,49900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-09T10:33:00,SUB0054,1,False
+PAY00483,CUST0157,999900,INR,Insufficient balance in account,insufficient_funds,2026-08-20T22:18:00,,1,True
+PAY00484,CUST0067,499900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-19T15:33:00,SUB0047,1,False
+PAY00485,CUST0227,49900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-04T00:29:00,SUB0054,1,False
+PAY00486,CUST0205,149900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-12T17:51:00,SUB0052,1,False
+PAY00487,CUST0177,499900,INR,Insufficient balance in account,insufficient_funds,2026-08-18T10:49:00,,1,True
+PAY00488,CUST0088,49900,INR,This card is no longer valid,card_expired,2026-08-06T06:21:00,,1,False
+PAY00489,CUST0123,299900,INR,Incorrect CVV entered,invalid_cvv,2026-08-05T20:29:00,SUB0086,1,False
+PAY00490,CUST0119,49900,INR,"Network error, please retry",network_error,2026-08-17T09:36:00,SUB0138,1,True
+PAY00491,CUST0005,1999900,INR,Txn declined - low balance,insufficient_funds,2026-08-12T02:09:00,SUB0097,1,True
+PAY00492,CUST0161,299900,INR,DO_NOT_HONOR,bank_declined,2026-08-06T19:07:00,,1,False
+PAY00493,CUST0181,49900,INR,Incorrect CVV entered,invalid_cvv,2026-08-16T07:23:00,,1,True
+PAY00494,CUST0056,1999900,INR,DO_NOT_HONOR,bank_declined,2026-08-02T06:58:00,SUB0124,1,True
+PAY00495,CUST0232,299900,INR,DO_NOT_HONOR,bank_declined,2026-08-17T09:49:00,,1,True
+PAY00496,CUST0026,99900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-07T23:02:00,,1,True
+PAY00497,CUST0134,999900,INR,Txn declined - low balance,insufficient_funds,2026-08-20T02:21:00,SUB0134,1,True
+PAY00498,CUST0197,999900,INR,Payment could not be processed,bank_declined,2026-08-07T10:12:00,SUB0082,1,True
+PAY00499,CUST0198,99900,INR,Declined by issuing bank,bank_declined,2026-08-09T03:00:00,SUB0027,1,False
+PAY00500,CUST0053,999900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-10T18:15:00,SUB0087,1,True
+PAY00501,CUST0139,49900,INR,Unknown error occurred,bank_declined,2026-08-04T12:03:00,SUB0115,1,True
+PAY00502,CUST0158,999900,INR,EXPIRED_CARD,card_expired,2026-08-18T02:59:00,SUB0034,1,False
+PAY00503,CUST0024,299900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-10T21:41:00,SUB0060,1,True
+PAY00504,CUST0243,299900,INR,Txn declined - low balance,insufficient_funds,2026-08-06T22:58:00,,1,True
+PAY00505,CUST0226,49900,INR,Payment could not be processed,card_expired,2026-08-12T15:29:00,SUB0090,1,False
+PAY00506,CUST0155,999900,INR,Declined by issuing bank,bank_declined,2026-08-04T10:35:00,,1,False
+PAY00507,CUST0137,99900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-18T05:30:00,SUB0111,1,False
+PAY00508,CUST0201,499900,INR,Unknown error occurred,other,2026-08-08T05:42:00,,1,False
+PAY00509,CUST0183,499900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-15T10:35:00,SUB0079,1,True
+PAY00510,CUST0245,1999900,INR,This card is no longer valid,card_expired,2026-08-20T12:20:00,,1,False
+PAY00511,CUST0024,1999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-21T00:48:00,SUB0137,1,True
+PAY00512,CUST0075,99900,INR,This card is no longer valid,card_expired,2026-08-11T09:36:00,,1,False
+PAY00513,CUST0236,149900,INR,Payment could not be processed,other,2026-08-03T18:00:00,SUB0033,1,False
+PAY00514,CUST0219,49900,INR,Txn declined - low balance,insufficient_funds,2026-08-01T22:35:00,SUB0073,1,False
+PAY00515,CUST0222,299900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-21T10:45:00,SUB0140,1,True
+PAY00516,CUST0055,499900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-13T11:53:00,SUB0033,1,True
+PAY00517,CUST0035,299900,INR,Insufficient balance in account,insufficient_funds,2026-08-14T04:05:00,,1,True
+PAY00518,CUST0221,299900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-17T13:35:00,SUB0058,1,False
+PAY00519,CUST0048,1999900,INR,Declined by issuing bank,bank_declined,2026-08-08T22:32:00,,1,True
+PAY00520,CUST0148,999900,INR,Card has expired,card_expired,2026-08-12T03:37:00,,1,False
+PAY00521,CUST0037,1999900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-09T14:33:00,,1,True
+PAY00522,CUST0023,499900,INR,Insufficient balance in account,insufficient_funds,2026-08-19T09:39:00,SUB0003,1,True
+PAY00523,CUST0121,149900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-14T11:51:00,SUB0078,1,True
+PAY00524,CUST0187,499900,INR,Payment could not be processed,network_error,2026-08-06T18:03:00,SUB0007,1,True
+PAY00525,CUST0074,1999900,INR,DO_NOT_HONOR,bank_declined,2026-08-09T08:08:00,SUB0066,1,False
+PAY00526,CUST0004,499900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-05T21:28:00,SUB0061,1,True
+PAY00527,CUST0125,49900,INR,Insufficient balance in account,insufficient_funds,2026-08-05T19:59:00,,1,False
+PAY00528,CUST0193,299900,INR,Payment could not be processed,other,2026-08-21T05:13:00,,1,False
+PAY00529,CUST0014,299900,INR,Payment could not be processed,bank_declined,2026-08-16T09:30:00,,1,False
+PAY00530,CUST0137,99900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-17T13:00:00,,1,True
+PAY00531,CUST0098,49900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-04T17:40:00,,1,True
+PAY00532,CUST0157,149900,INR,CVV verification failed,invalid_cvv,2026-08-04T08:41:00,SUB0062,1,True
+PAY00533,CUST0188,999900,INR,Gateway timeout,network_error,2026-08-06T10:35:00,SUB0018,1,True
+PAY00534,CUST0004,299900,INR,This card is no longer valid,card_expired,2026-08-12T07:46:00,SUB0007,1,True
+PAY00535,CUST0159,999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-04T22:07:00,,1,True
+PAY00536,CUST0097,999900,INR,DO_NOT_HONOR,bank_declined,2026-08-06T08:18:00,,1,True
+PAY00537,CUST0164,999900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-11T08:10:00,SUB0016,1,False
+PAY00538,CUST0098,1999900,INR,Card has expired,card_expired,2026-08-09T05:28:00,,1,True
+PAY00539,CUST0052,49900,INR,DO_NOT_HONOR,bank_declined,2026-08-05T17:49:00,,1,True
+PAY00540,CUST0028,49900,INR,CVV verification failed,invalid_cvv,2026-08-03T18:46:00,SUB0128,1,True
+PAY00541,CUST0039,999900,INR,Declined by issuing bank,bank_declined,2026-08-13T08:09:00,,1,False
+PAY00542,CUST0148,299900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-03T17:14:00,,1,True
+PAY00543,CUST0210,149900,INR,Gateway timeout,network_error,2026-08-11T21:19:00,,1,True
+PAY00544,CUST0246,149900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-03T14:48:00,,1,False
+PAY00545,CUST0046,149900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-13T03:40:00,SUB0113,1,False
+PAY00546,CUST0189,999900,INR,Insufficient balance in account,insufficient_funds,2026-08-19T07:31:00,,1,True
+PAY00547,CUST0165,1999900,INR,This card is no longer valid,card_expired,2026-08-15T00:02:00,SUB0011,1,False
+PAY00548,CUST0104,1999900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-18T04:47:00,,1,False
+PAY00549,CUST0010,299900,INR,"Network error, please retry",network_error,2026-08-20T01:15:00,SUB0045,1,True
+PAY00550,CUST0162,49900,INR,Txn declined - low balance,insufficient_funds,2026-08-15T19:10:00,SUB0028,1,False
+PAY00551,CUST0030,299900,INR,Transaction failed,bank_declined,2026-08-11T23:43:00,SUB0148,1,False
+PAY00552,CUST0140,499900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-06T10:04:00,SUB0107,1,True
+PAY00553,CUST0044,99900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-19T01:08:00,,1,True
+PAY00554,CUST0157,49900,INR,Payment could not be processed,card_expired,2026-08-01T00:11:00,,1,False
+PAY00555,CUST0152,1999900,INR,CVV verification failed,invalid_cvv,2026-08-16T22:08:00,,1,True
+PAY00556,CUST0134,499900,INR,DO_NOT_HONOR,bank_declined,2026-08-02T19:11:00,,1,False
+PAY00557,CUST0023,49900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-18T07:12:00,SUB0025,1,True
+PAY00558,CUST0159,299900,INR,This card is no longer valid,card_expired,2026-08-21T21:13:00,SUB0039,1,False
+PAY00559,CUST0176,99900,INR,"Network error, please retry",network_error,2026-08-02T01:41:00,SUB0065,1,True
+PAY00560,CUST0086,49900,INR,Unknown error occurred,bank_declined,2026-08-18T05:10:00,SUB0030,1,False
+PAY00561,CUST0019,149900,INR,CVV verification failed,invalid_cvv,2026-08-14T06:47:00,SUB0029,1,True
+PAY00562,CUST0084,1999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-07T12:57:00,SUB0125,1,True
+PAY00563,CUST0014,499900,INR,Incorrect CVV entered,invalid_cvv,2026-08-15T05:24:00,SUB0050,1,True
+PAY00564,CUST0162,99900,INR,EXPIRED_CARD,card_expired,2026-08-02T22:36:00,SUB0120,1,True
+PAY00565,CUST0118,149900,INR,EXPIRED_CARD,card_expired,2026-08-20T05:50:00,,1,False
+PAY00566,CUST0232,1999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-17T15:55:00,SUB0119,1,False
+PAY00567,CUST0072,99900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-08T10:27:00,,1,True
+PAY00568,CUST0152,299900,INR,Unknown error occurred,other,2026-08-02T01:30:00,SUB0109,1,False
+PAY00569,CUST0136,299900,INR,This card is no longer valid,card_expired,2026-08-16T07:05:00,SUB0105,1,False
+PAY00570,CUST0244,999900,INR,Txn declined - low balance,insufficient_funds,2026-08-03T00:30:00,SUB0118,1,True
+PAY00571,CUST0220,299900,INR,Declined by issuing bank,bank_declined,2026-08-05T22:25:00,,1,True
+PAY00572,CUST0161,49900,INR,Declined by issuing bank,bank_declined,2026-08-13T22:21:00,SUB0070,1,False
+PAY00573,CUST0179,99900,INR,Unknown error occurred,other,2026-08-03T19:56:00,,1,False
+PAY00574,CUST0132,49900,INR,Unknown error occurred,other,2026-08-04T12:23:00,SUB0094,1,False
+PAY00575,CUST0045,1999900,INR,Declined by issuing bank,bank_declined,2026-08-07T04:21:00,SUB0123,1,True
+PAY00576,CUST0189,999900,INR,Unknown error occurred,other,2026-08-07T23:48:00,SUB0069,1,True
+PAY00577,CUST0129,149900,INR,Payment could not be processed,network_error,2026-08-15T15:32:00,SUB0137,1,True
+PAY00578,CUST0174,149900,INR,"Network error, please retry",network_error,2026-08-03T06:57:00,SUB0101,1,False
+PAY00579,CUST0230,149900,INR,Insufficient balance in account,insufficient_funds,2026-08-04T22:09:00,,1,True
+PAY00580,CUST0134,999900,INR,Transaction failed,other,2026-08-18T04:30:00,SUB0006,1,False
+PAY00581,CUST0075,99900,INR,Insufficient balance in account,insufficient_funds,2026-08-17T20:21:00,SUB0084,1,True
+PAY00582,CUST0125,499900,INR,Issuer declined transaction (generic decline),bank_declined,2026-08-05T09:10:00,SUB0096,1,False
+PAY00583,CUST0249,149900,INR,Insufficient balance in account,insufficient_funds,2026-08-15T05:39:00,,1,False
+PAY00584,CUST0074,999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-05T05:15:00,,1,True
+PAY00585,CUST0148,99900,INR,Txn declined - low balance,insufficient_funds,2026-08-18T22:02:00,,1,True
+PAY00586,CUST0038,499900,INR,This card is no longer valid,card_expired,2026-08-10T03:58:00,,1,True
+PAY00587,CUST0197,99900,INR,Your account has insufficient funds for this transaction,insufficient_funds,2026-08-01T23:34:00,SUB0076,1,False
+PAY00588,CUST0122,999900,INR,Incorrect CVV entered,invalid_cvv,2026-08-15T10:44:00,SUB0011,1,True
+PAY00589,CUST0036,299900,INR,Gateway timeout,network_error,2026-08-20T07:28:00,SUB0050,1,True
+PAY00590,CUST0150,49900,INR,Bank declined the transaction. Contact your bank.,bank_declined,2026-08-18T14:43:00,SUB0132,1,False
+PAY00591,CUST0101,499900,INR,Txn declined - low balance,insufficient_funds,2026-08-02T21:23:00,,1,True
+PAY00592,CUST0110,149900,INR,Payment could not be processed,card_expired,2026-08-10T14:55:00,SUB0114,1,False
+PAY00593,CUST0190,1999900,INR,Payment could not be processed,other,2026-08-14T23:57:00,,1,True
+PAY00594,CUST0154,1999900,INR,INSUFFICIENT_FUNDS,insufficient_funds,2026-08-17T10:04:00,SUB0097,1,False
+PAY00595,CUST0023,499900,INR,Txn declined - low balance,insufficient_funds,2026-08-15T22:36:00,SUB0048,1,False
+PAY00596,CUST0214,1999900,INR,This card is no longer valid,card_expired,2026-08-10T18:19:00,,1,False
+PAY00597,CUST0058,149900,INR,Insufficient balance in account,insufficient_funds,2026-08-21T20:30:00,,1,True
+PAY00598,CUST0074,999900,INR,EXPIRED_CARD,card_expired,2026-08-08T00:07:00,SUB0018,1,False
+PAY00599,CUST0154,299900,INR,TIMEOUT_ERROR - no response from processor,network_error,2026-08-09T20:43:00,,1,True
+PAY00600,CUST0031,1999900,INR,This card is no longer valid,card_expired,2026-08-09T05:37:00,SUB0035,1,True

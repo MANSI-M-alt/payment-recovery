@@ -24,7 +24,7 @@ An AI agent that, for every failed payment:
 - [x] Synthetic dataset generated (`data/`)
 - [x] Failure classifier (96% test accuracy — see `docs/classifier_metrics.json`)
 - [x] Recovery scorer (0.74 ROC-AUC — see `docs/scorer_metrics.json`)
-- [ ] Strategy selector + policy gate
+- [x] Strategy selector + policy gate (LLM reasoning, bounded by policy engine)
 - [ ] Razorpay test-mode integration
 - [ ] Backend API + audit log
 - [ ] Frontend dashboard
@@ -92,6 +92,36 @@ a held-out 25% test split (150 payments).
   credible than a suspiciously perfect score would be
 
 End-to-end batch recovery rate (full pipeline on 600 payments): TBD.
+
+### Strategy selector + policy gate
+The strategy selector is the LLM-reasoning step: given the classifier
+output, recovery score, and customer history, it picks one recovery
+action (`retry_now`, `retry_delayed`, `notify_customer`,
+`escalate_to_human`) with a short explanation.
+
+Critically, it does **not** decide freely — a rule-based `policy_engine.py`
+runs first and computes which actions are even permitted:
+
+- **Bounded**: auto-retry attempts are capped (stops after 3 failed
+  attempts rather than retrying forever)
+- **Gated**: payments above ₹5,000, or classifications the model isn't
+  confident about, require human approval before any automated action
+- **Explainable**: every decision includes a 1–2 sentence reasoning string
+- **Reliable**: if the LLM call fails or is unavailable, a deterministic
+  rule-based fallback keeps the pipeline running rather than crashing —
+  tested and verified in `ai/strategy_selector.py`
+
+Every policy check and decision is written to an append-only audit log
+(`docs/audit_log.jsonl` via `ai/audit_logger.py`), so any payment's full
+decision trail — what happened, why, what was decided, and whether it
+required human approval — can be reconstructed after the fact.
+
+Example verified behaviors:
+- A ₹19,999 payment was correctly flagged as requiring human approval
+  (exceeds the ₹5,000 auto-action limit) even though a strategy was still
+  recommended
+- A payment on its 5th failed attempt was correctly hard-stopped rather
+  than retried again
 
 ## 8. Limitations
 - Dataset is synthetic; failure-text patterns are simulated, not pulled

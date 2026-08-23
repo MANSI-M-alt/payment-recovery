@@ -25,6 +25,7 @@ An AI agent that, for every failed payment:
 - [x] Failure classifier (96% test accuracy — see `docs/classifier_metrics.json`)
 - [x] Recovery scorer (0.74 ROC-AUC — see `docs/scorer_metrics.json`)
 - [x] Strategy selector + policy gate (LLM reasoning, bounded by policy engine)
+- [x] Razorpay test-mode integration (Payment Links, with graceful failure handling)
 - [ ] Razorpay test-mode integration
 - [ ] Backend API + audit log
 - [ ] Frontend dashboard
@@ -122,6 +123,26 @@ Example verified behaviors:
   recommended
 - A payment on its 5th failed attempt was correctly hard-stopped rather
   than retried again
+
+### Razorpay test-mode integration
+Recovery actions (`retry_now`, `retry_delayed`, `notify_customer`) create
+a real Razorpay **Payment Link** in test mode via `ai/razorpay_client.py`
+and `ai/execute_action.py`.
+
+Payment Links were chosen deliberately: creating one is a genuine
+server-side API call needing no customer interaction, so the *creation*
+step is fully automatable end-to-end. *Completing* one requires the
+customer to actually pay (OTP/card entry), which cannot and should not be
+scripted server-side — this mirrors real payment security constraints
+rather than faking a full auto-pay loop.
+
+Verified behaviors:
+- If `requires_human_approval` is true, the action is **not** auto-executed
+  — it's logged as pending approval instead, proving the gate actually
+  blocks execution rather than just being computed and ignored
+- If the Razorpay API call fails (bad keys, network issue), the failure is
+  caught, logged to the audit trail, and returned clearly — the pipeline
+  does not crash or silently pretend success
 
 ## 8. Limitations
 - Dataset is synthetic; failure-text patterns are simulated, not pulled
